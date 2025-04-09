@@ -7,10 +7,10 @@ const links = await getEntry('menu', 'main')
 <Fragment>
   {
     links && links.data.items.length > 0 && (
-      <nav class='my-2'>
-        <ul class='flex gap-4'>
+      <nav class='-mx-2 my-2 w-full md:mx-0'>
+        <ul class='flex justify-center gap-4'>
           {links.data.items.map((link) => (
-            <li class='font-bold text-cyan-700 transition-colors hover:text-cyan-700/60'>
+            <li class='font-bold text-cyan-700 transition-colors group-[[data-image=true]]:text-white hover:text-cyan-700/60 hover:group-[[data-image=true]]:text-white/80'>
               <a href={link.url}>{link.label}</a>
             </li>
           ))}

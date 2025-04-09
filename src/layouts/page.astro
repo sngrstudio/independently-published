@@ -1,0 +1,23 @@
+---
+import Layout, { type Props as LayoutProps } from './layout.astro'
+
+interface Props extends LayoutProps {}
+
+const { title, description, class: className, ...props } = Astro.props
+---
+
+<Layout
+  {...props}
+  title={title}
+  description={description}
+  class:list={['', className]}
+>
+  <main class='mx-auto max-w-screen-lg'>
+    <article
+      class='prose prose-zinc md:prose-lg prose-p:font-serif md:prose-h1:text-6xl max-w-none px-4 md:px-0'
+    >
+      <h1>{title}</h1>
+      <slot />
+    </article>
+  </main>
+</Layout>

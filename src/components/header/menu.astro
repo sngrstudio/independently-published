@@ -1,0 +1,21 @@
+---
+import { getEntry } from 'astro:content'
+
+const links = await getEntry('menu', 'main')
+---
+
+<Fragment>
+  {
+    links && links.data.items.length > 0 && (
+      <nav class='my-2'>
+        <ul class='flex gap-4'>
+          {links.data.items.map((link) => (
+            <li class='font-bold text-cyan-700 transition-colors hover:text-cyan-700/60'>
+              <a href={link.url}>{link.label}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    )
+  }
+</Fragment>

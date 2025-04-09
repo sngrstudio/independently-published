@@ -1,7 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config'
-
 import tailwindcss from '@tailwindcss/vite'
+import icons from 'unplugin-icons/vite'
 
 // https://astro.build/config
 export default defineConfig({
@@ -10,6 +10,11 @@ export default defineConfig({
   },
 
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss(), icons({ compiler: 'astro' })]
+  },
+
+  experimental: {
+    responsiveImages: true,
+    svg: true
   }
 })

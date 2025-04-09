@@ -1,0 +1,36 @@
+---
+import type { CollectionEntry } from 'astro:content'
+import Social from './social.astro'
+import Menu from './menu.astro'
+import { Picture } from 'astro:assets'
+
+interface Props {
+  site: CollectionEntry<'site'>
+}
+
+const { site } = Astro.props
+---
+
+<header
+  class='mb-8 flex flex-col items-center gap-2 px-2 pt-8 *:text-center md:px-0'
+>
+  {
+    site.data.logo && (
+      <Picture
+        class='mb-4 rounded-full'
+        src={site.data.logo}
+        layout='fixed'
+        width={80}
+        height={80}
+        priority={true}
+        alt=''
+      />
+    )
+  }
+  <a class='text-4xl font-bold' href='/'>
+    {site.data.title}
+  </a>
+  <div class='text-zinc-500'>{site.data.description}</div>
+  <Social />
+  <Menu />
+</header>

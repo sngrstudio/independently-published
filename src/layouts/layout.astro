@@ -1,21 +1,41 @@
 ---
 import BaseLayout, { type Props as BaseLayoutProps } from './base.astro'
 import Meta, { type Props as MetaProps } from './meta.astro'
+import Header from '~/components/header/header.astro'
+import { getEntry } from 'astro:content'
 import './global.css'
 
 export interface Props extends BaseLayoutProps, Omit<MetaProps, 'site'> {}
 
-const { title, description, canonical, ...props } = Astro.props
-const site = await getCollection('site')
+const {
+  title,
+  description,
+  canonical,
+  class: className,
+  ...props
+} = Astro.props
+const site = await getEntry('site', 'site')
+if (!site) {
+  throw new Error('Site entry not found')
+}
 ---
 
-<BaseLayout {...props}>
+<BaseLayout
+  {...props}
+  class:list={['min-h-screen bg-zinc-50 text-zinc-950', className]}
+>
   {/* <body> */}
+  <Header site={site} />
   <slot />
 
   {/* <head> */}
   <Fragment slot='head'>
-    <Meta title={title} description={description} canonical={canonical} site={site} />
+    <Meta
+      title={title}
+      description={description}
+      canonical={canonical}
+      site={site}
+    />
     <slot name='head' />
   </Fragment>
 </BaseLayout>

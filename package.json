@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "independently-published",
   "version": "0.0.1",
   "type": "module",
   "scripts": {
@@ -12,7 +12,9 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "astro": "5.6.1"
+    "@tailwindcss/vite": "^4.1.3",
+    "astro": "5.6.1",
+    "tailwindcss": "^4.1.3"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.4",

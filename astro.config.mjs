@@ -9,6 +9,10 @@ export default defineConfig({
     '/sngrcreative': 'https://sngrcreative.pages.dev'
   },
 
+  image: {
+    experimentalLayout: 'responsive'
+  },
+
   vite: {
     plugins: [tailwindcss(), icons({ compiler: 'astro' })]
   },

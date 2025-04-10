@@ -20,7 +20,7 @@ const links = await getEntry('menu', 'social')
       <nav class='my-4'>
         <ul class='flex gap-8'>
           {links.data.items.map((link) => (
-            <li class='text-xl text-zinc-500/60 transition-colors group-[[data-image=true]]:text-white/80 hover:text-zinc-500 hover:group-[[data-image=true]]:text-white'>
+            <li class='text-xl text-neutral-500/60 transition-colors group-[[data-image=true]]:text-neutral-50/80 hover:text-neutral-500 hover:group-[[data-image=true]]:text-neutral-50'>
               <a
                 href={link.url}
                 aria-label={link.label}

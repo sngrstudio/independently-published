@@ -1,0 +1,14 @@
+---
+import type { CollectionEntry } from 'astro:content'
+import Post from './post.astro'
+
+interface Props {
+  posts: Array<CollectionEntry<'pages'>>
+}
+
+const { posts } = Astro.props
+---
+
+<section class='grid grid-cols-1 gap-y-8'>
+  {posts.map((post) => <Post post={post} />)}
+</section>

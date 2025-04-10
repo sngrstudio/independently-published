@@ -1,5 +1,6 @@
 ---
 import PageLayout from '~/layouts/page.astro'
+import Infobox from '~/components/posts/infobox.astro'
 import { getCollection, render } from 'astro:content'
 
 export const getStaticPaths = async () => {
@@ -18,6 +19,12 @@ const { Content } = await render(page)
   title={page.data.title}
   description={page.data.description}
   image={page.data.image}
+  data-post={page.data.isPost}
+  class='group data-[post=true]:prose-h1:mb-4'
 >
+  {/* infobox for posts */}
+  <Infobox post={page} class='not-group-[[data-post=true]]:hidden' />
+
+  {/* content */}
   <Content />
 </PageLayout>

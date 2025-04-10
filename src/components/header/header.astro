@@ -13,7 +13,7 @@ const { image, site } = Astro.props
 ---
 
 <header
-  class='group relative mb-8 flex flex-col items-center justify-center gap-2 overflow-hidden px-2 pt-8 *:text-center data-[image=true]:min-h-[80vh] data-[image=true]:bg-black/25 md:px-0'
+  class='group relative mb-8 flex flex-col items-center justify-center gap-2 overflow-hidden px-2 pt-8 *:text-center data-[image=true]:min-h-[80vh] data-[image=true]:bg-neutral-950/25 md:px-0'
   data-image={!!image}
 >
   {
@@ -29,10 +29,13 @@ const { image, site } = Astro.props
       />
     )
   }
-  <a class='text-4xl font-bold group-[[data-image=true]]:text-white' href='/'>
+  <a
+    class='text-4xl font-bold group-[[data-image=true]]:text-neutral-50'
+    href='/'
+  >
     {site.data.title}
   </a>
-  <div class='text-zinc-500 group-[[data-image=true]]:text-white'>
+  <div class='text-neutral-500 group-[[data-image=true]]:text-neutral-50'>
     {site.data.description}
   </div>
   <Social />

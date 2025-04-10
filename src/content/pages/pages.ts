@@ -7,7 +7,10 @@ export const pages = defineCollection({
   schema: ({ image }) =>
     z.object({
       title: z.string().max(160),
-      description: z.string().max(160),
-      image: image().optional()
+      description: z.string().max(160).optional(),
+      image: image().optional(),
+      date: z.coerce.date().optional(),
+      tags: z.array(z.string()).optional(),
+      isPost: z.boolean().default(false).optional()
     })
 })

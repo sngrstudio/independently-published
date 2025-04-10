@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "0.9.4",
-    "@iconify/json": "^2.2.324",
+    "@iconify/json": "^2.2.325",
     "@tailwindcss/typography": "^0.5.16",
     "@types/marked": "^6.0.0",
     "concurrently": "9.1.2",

@@ -3,24 +3,24 @@
   "workspaces": {
     "": {
       "dependencies": {
-        "@tailwindcss/vite": "^4.1.3",
-        "astro": "5.6.1",
-        "marked": "^15.0.8",
-        "reading-time": "^1.5.0",
-        "tailwindcss": "^4.1.3",
+        "@tailwindcss/vite": "latest",
+        "astro": "latest",
+        "marked": "latest",
+        "reading-time": "latest",
+        "tailwindcss": "latest",
       },
       "devDependencies": {
-        "@astrojs/check": "0.9.4",
-        "@iconify/json": "^2.2.324",
-        "@tailwindcss/typography": "^0.5.16",
-        "@types/marked": "^6.0.0",
-        "concurrently": "9.1.2",
-        "prettier": "^3.5.3",
-        "prettier-config-standard": "7.0.0",
-        "prettier-plugin-astro": "0.14.1",
-        "prettier-plugin-tailwindcss": "^0.6.11",
-        "typescript": "5.8.3",
-        "unplugin-icons": "^22.1.0",
+        "@astrojs/check": "latest",
+        "@iconify/json": "latest",
+        "@tailwindcss/typography": "latest",
+        "@types/marked": "latest",
+        "concurrently": "latest",
+        "prettier": "latest",
+        "prettier-config-standard": "latest",
+        "prettier-plugin-astro": "latest",
+        "prettier-plugin-tailwindcss": "latest",
+        "typescript": "latest",
+        "unplugin-icons": "latest",
       },
     },
   },
@@ -119,7 +119,7 @@
 
     "@esbuild/win32-x64": ["@esbuild/win32-x64@0.25.2", "", { "os": "win32", "cpu": "x64" }, "sha512-kM3HKb16VIXZyIeVrM1ygYmZBKybX8N4p754bw390wGO3Tf2j4L2/WYL+4suWujpgf6GBYs3jv7TyUivdd05JA=="],
 
-    "@iconify/json": ["@iconify/json@2.2.324", "", { "dependencies": { "@iconify/types": "*", "pathe": "^1.1.2" } }, "sha512-7rx2pY2NH4zn/7q04zFiiD3o7eQ8ZV0F0nf7Rkn2DyI272OWzDMw5goSULOyDdiW9sdfBLeZod/TRxEilaNNsA=="],
+    "@iconify/json": ["@iconify/json@2.2.325", "", { "dependencies": { "@iconify/types": "*", "pathe": "^1.1.2" } }, "sha512-DKBZY0nXvllakPDUHpxmETE4y6hOHkBfr3IHTxGxHmoXWCCynEPMocXSui8BO9GLEYSV+ztkh/aacgxSFKl+JQ=="],
 
     "@iconify/types": ["@iconify/types@2.0.0", "", {}, "sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg=="],
 

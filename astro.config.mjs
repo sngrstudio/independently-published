@@ -5,6 +5,7 @@ import icons from 'unplugin-icons/vite'
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'http://localhost:4321',
   image: {
     experimentalLayout: 'responsive',
     domains: ['astro.badg.es']

@@ -1,0 +1,40 @@
+---
+import type { CollectionEntry } from 'astro:content'
+import { getExcerpt } from '~/utils/excerpt'
+
+interface Props {
+  post: CollectionEntry<'pages'>
+  site: CollectionEntry<'site'>
+}
+
+const { post, site } = Astro.props
+---
+
+<div
+  class="flex h-[630px] w-[1200px] flex-col bg-neutral-50 p-16 font-['Inter_Variable',_sans-serif] text-neutral-950"
+>
+  <div class='flex flex-1 flex-col justify-center'>
+    <div class='mb-6 text-7xl font-bold'>{post.data.title}</div>
+    <div class='text-3xl text-neutral-500'>
+      {
+        post.data.description || (
+          <span class='after:content-["..."]'>
+            {await getExcerpt(post.body!, { html: false }).then((t) =>
+              t.slice(0, 160)
+            )}
+          </span>
+        )
+      }
+    </div>
+  </div>
+  <div class='flex items-center'>
+    <img
+      class='mr-2'
+      src={`${Astro.site}${site.data.favicon}`}
+      width={25}
+      height={25}
+      alt=''
+    />
+    <div class='text-xl font-bold'>{site.data.title}</div>
+  </div>
+</div>

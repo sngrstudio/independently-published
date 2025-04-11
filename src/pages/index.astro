@@ -1,13 +1,8 @@
 ---
-import Layout from '~/layouts/layout.astro'
-import Posts from '~/components/posts/posts.astro'
+import ListLayout from '~/layouts/list.astro'
 import { getCollection } from 'astro:content'
 
 const posts = await getCollection('pages', (page) => page.data.isPost)
 ---
 
-<Layout>
-  <main class='mx-auto mb-24 max-w-screen-md px-2 md:px-0'>
-    <Posts posts={posts} />
-  </main>
-</Layout>
+<ListLayout posts={posts} />

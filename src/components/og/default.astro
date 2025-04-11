@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content'
+import Template from './template.astro'
 import { Image } from 'astro:assets'
 
 interface Props {
@@ -9,9 +10,7 @@ interface Props {
 const { site } = Astro.props
 ---
 
-<div
-  style='display: flex; height: 630px; width: 1200px; flex-direction: column; background-color: #fafafa; padding: 2rem; font-family: "Inter"; color: #09090b; box-sizing: border-box;'
->
+<Template>
   <div
     style='display: flex; flex: 1; flex-direction: column; align-items: center; justify-content: center;'
   >
@@ -36,4 +35,4 @@ const { site } = Astro.props
       {site.data.description}
     </div>
   </div>
-</div>
+</Template>

@@ -4,6 +4,7 @@ import Meta, { type Props as MetaProps } from './meta.astro'
 import Header, {
   type Props as HeaderProps
 } from '~/components/header/header.astro'
+import Footer from '~/components/footer/footer.astro'
 import { getEntry } from 'astro:content'
 import './global.css'
 
@@ -33,6 +34,7 @@ if (!site) {
   {/* <body> */}
   <Header image={image} site={site} />
   <slot />
+  <Footer site={site} />
 
   {/* <head> */}
   <Fragment slot='head'>

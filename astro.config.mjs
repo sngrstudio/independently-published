@@ -10,7 +10,8 @@ export default defineConfig({
   },
 
   image: {
-    experimentalLayout: 'responsive'
+    experimentalLayout: 'responsive',
+    domains: ['astro.badg.es']
   },
 
   vite: {

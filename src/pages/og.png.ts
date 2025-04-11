@@ -32,11 +32,10 @@ const InterBold = await fetch(
 })
 
 export const GET: APIRoute = async () => {
-  const htmlMarkup = await container.renderToString(DefaultOGTemplate, {
+  const markup = await container.renderToString(DefaultOGTemplate, {
     props: { site }
   })
-  const markup = html(htmlMarkup)
-  const svg = await satori(markup, {
+  const svg = await satori(html(markup), {
     width: 1200,
     height: 630,
     fonts: [
@@ -54,7 +53,7 @@ export const GET: APIRoute = async () => {
       }
     ]
   })
-  const png = await sharp(Buffer.from(svg)).png({ quality: 100 }).toBuffer()
+  const png = await sharp(Buffer.from(svg)).png().toBuffer()
   return new Response(png, {
     headers: {
       'Content-Type': 'image/png'

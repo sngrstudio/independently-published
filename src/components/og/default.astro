@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content'
+import { Image } from 'astro:assets'
 
 interface Props {
   site: CollectionEntry<'site'>
@@ -14,13 +15,18 @@ const { site } = Astro.props
   <div
     style='display: flex; flex: 1; flex-direction: column; align-items: center; justify-content: center;'
   >
-    <img
-      style='margin-bottom: 2rem;'
-      src={`${import.meta.env.SITE}${site.data.favicon}`}
-      width={120}
-      height={120}
-      alt=''
-    />
+    {
+      site.data.favicon && (
+        <Image
+          style='margin-bottom: 2rem;'
+          src={new URL(site.data.favicon, import.meta.env.SITE).href}
+          layout='fixed'
+          width={120}
+          height={120}
+          alt=''
+        />
+      )
+    }
     <div
       style='text-align: center; font-size: 5rem; font-weight: 700; margin-bottom: 1rem;'
     >

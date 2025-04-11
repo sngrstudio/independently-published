@@ -9,6 +9,12 @@ interface Props {
 const { posts } = Astro.props
 ---
 
-<section class='grid grid-cols-1 gap-y-8'>
-  {posts.map((post) => <Post post={post} />)}
+<section class='grid grid-cols-1 gap-y-12'>
+  {
+    posts
+      .sort(
+        (a, b) => (b.data.date?.getTime() || 0) - (a.data.date?.getTime() || 0)
+      )
+      .map((post) => <Post post={post} />)
+  }
 </section>

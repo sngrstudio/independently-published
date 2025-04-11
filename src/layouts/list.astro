@@ -14,7 +14,11 @@ const { title, posts } = Astro.props
 
 <Layout title={title && `Tag: ${title}`}>
   <Main>
-    {title && <h1 class='mb-8 text-4xl font-bold'>{`Tag: ${title}`}</h1>}
+    {
+      title && (
+        <h1 class='mb-10 border-b border-b-neutral-200 pb-2 text-2xl font-bold md:text-4xl'>{`Tag: ${title}`}</h1>
+      )
+    }
     <Posts posts={posts} />
   </Main>
 </Layout>

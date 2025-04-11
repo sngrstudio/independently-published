@@ -5,10 +5,6 @@ import icons from 'unplugin-icons/vite'
 
 // https://astro.build/config
 export default defineConfig({
-  redirects: {
-    '/sngrcreative': 'https://sngrcreative.pages.dev'
-  },
-
   image: {
     experimentalLayout: 'responsive',
     domains: ['astro.badg.es']

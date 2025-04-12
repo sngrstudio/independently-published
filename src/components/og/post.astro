@@ -29,7 +29,7 @@ const { post, site } = Astro.props
     {
       site.data.favicon && (
         <Image
-          style='margin-right: 0.5rem;'
+          style='margin-right: 0.5rem; border-radius: 9999px;'
           src={new URL(site.data.favicon, import.meta.env.SITE).href}
           layout='fixed'
           width={25}

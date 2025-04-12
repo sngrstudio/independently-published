@@ -1,15 +1,12 @@
 ---
 import Layout from '~/layouts/layout.astro'
-import type { CollectionEntry } from 'astro:content'
 import Main from '~/components/common/main.astro'
-import Posts from '~/components/posts/posts.astro'
 
 interface Props {
-  title?: string
-  posts: Array<CollectionEntry<'pages'>>
+  title?: string | undefined
 }
 
-const { title, posts } = Astro.props
+const { title } = Astro.props
 ---
 
 <Layout title={title && `Tag: ${title}`}>
@@ -19,6 +16,10 @@ const { title, posts } = Astro.props
         <h1 class='mb-10 border-b border-b-neutral-200 pb-2 text-2xl font-bold md:text-4xl'>{`Tag: ${title}`}</h1>
       )
     }
-    <Posts posts={posts} />
+    <slot />
   </Main>
+
+  <Fragment slot='head'>
+    <slot name='head' />
+  </Fragment>
 </Layout>

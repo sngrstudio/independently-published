@@ -27,4 +27,22 @@ const { Content } = await render(page)
 
   {/* content */}
   <Content />
+
+  {/* meta tags */}
+  <Fragment slot='head'>
+    <meta property='og:type' content='article' />
+    {
+      page.data.date && (
+        <meta
+          property='article:published_time'
+          content={page.data.date.toISOString()}
+        />
+      )
+    }
+    {
+      page.data.tags && (
+        <meta property='article:tags' content={page.data.tags.join(', ')} />
+      )
+    }
+  </Fragment>
 </PageLayout>

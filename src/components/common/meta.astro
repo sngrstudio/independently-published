@@ -4,11 +4,12 @@ import type { CollectionEntry } from 'astro:content'
 export interface Props {
   title?: string | undefined
   description?: string | undefined
-  canonical?: string | undefined
+  canonical?: URL | undefined
+  hidden?: boolean | undefined
   site: CollectionEntry<'site'>
 }
 
-const { title, description, canonical, site } = Astro.props
+const { title, description, canonical, hidden, site } = Astro.props
 ---
 
 {/* Basic metadata */}
@@ -17,7 +18,11 @@ const { title, description, canonical, site } = Astro.props
   name='description'
   content={description ? description : site.data.description}
 />
-<link rel='canonical' href={canonical ? canonical : Astro.url} />
+<link rel='canonical' href={canonical} />
+<meta
+  name='robots'
+  content={hidden || site.data.hidden ? 'noindex, nofollow' : 'index, follow'}
+/>
 
-{/* Favicon */}
+{/* Icons */}
 <link rel='icon' type='image/svg+xml' href={site.data.favicon} />

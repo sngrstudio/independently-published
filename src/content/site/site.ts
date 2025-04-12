@@ -9,6 +9,7 @@ export const site = defineCollection({
       title: z.string().max(64),
       description: z.string().max(160),
       logo: image().optional(),
-      favicon: z.string().optional()
+      favicon: z.string().optional(),
+      hidden: z.boolean().default(false)
     })
 })

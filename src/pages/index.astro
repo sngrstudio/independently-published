@@ -1,8 +1,15 @@
 ---
 import ListLayout from '~/layouts/list.astro'
+import Posts from '~/components/posts/posts.astro'
 import { getCollection } from 'astro:content'
 
 const posts = await getCollection('pages', (page) => page.data.isPost)
 ---
 
-<ListLayout posts={posts} />
+<ListLayout>
+  <Posts posts={posts} />
+
+  <Fragment slot='head'>
+    <meta property='og:type' content='website' />
+  </Fragment>
+</ListLayout>

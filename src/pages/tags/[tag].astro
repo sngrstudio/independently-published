@@ -1,5 +1,6 @@
 ---
 import ListLayout from '~/layouts/list.astro'
+import Posts from '~/components/posts/posts.astro'
 import { getCollection } from 'astro:content'
 
 export const getStaticPaths = async () => {
@@ -19,4 +20,10 @@ export const getStaticPaths = async () => {
 const { tag, posts } = Astro.props
 ---
 
-<ListLayout title={tag} posts={posts} />
+<ListLayout title={tag}>
+  <Posts posts={posts} />
+
+  <Fragment slot='head'>
+    <meta property='og:type' content='website' />
+  </Fragment>
+</ListLayout>

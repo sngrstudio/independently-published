@@ -18,7 +18,7 @@
       },
       "devDependencies": {
         "@astrojs/check": "0.9.4",
-        "@iconify/json": "2.2.339",
+        "@iconify/json": "2.2.341",
         "@tailwindcss/typography": "0.5.16",
         "@types/marked": "6.0.0",
         "@types/node": "22.14.1",
@@ -139,7 +139,7 @@
 
     "@fontsource-variable/inter": ["@fontsource-variable/inter@5.2.5", "", {}, "sha512-TrWffUAFOnT8zroE9YmGybagoOgM/HjRqMQ8k9R0vVgXlnUh/vnpbGPAS/Caz1KIlOPnPGh6fvJbb7DHbFCncA=="],
 
-    "@iconify/json": ["@iconify/json@2.2.339", "", { "dependencies": { "@iconify/types": "*", "pathe": "^1.1.2" } }, "sha512-8p+IZcJuic2CW8saJb6bktV5Tl0G4QqnhLfaof1v9hFpMI3KVSv8isN198Wu5sDVdFGAzXJ8uDsNEUyc6W1VDg=="],
+    "@iconify/json": ["@iconify/json@2.2.341", "", { "dependencies": { "@iconify/types": "*", "pathe": "^1.1.2" } }, "sha512-IwH6m5hbVRtjBcmcI7xI6/H3VV3Tt0rqzWO4UxV1L82Cv32CsnvwpykLe9a2DgC06/gnrCmp3vgEzPsEHzndqg=="],
 
     "@iconify/types": ["@iconify/types@2.0.0", "", {}, "sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg=="],
 

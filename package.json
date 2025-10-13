@@ -28,10 +28,10 @@
   },
   "devDependencies": {
     "@astrojs/check": "0.9.4",
-    "@iconify/json": "2.2.392",
+    "@iconify/json": "2.2.394",
     "@tailwindcss/typography": "0.5.19",
     "@types/marked": "6.0.0",
-    "@types/node": "22.18.8",
+    "@types/node": "22.18.10",
     "@types/sanitize-html": "2.16.0",
     "@vite-pwa/assets-generator": "1.0.1",
     "concurrently": "9.2.1",

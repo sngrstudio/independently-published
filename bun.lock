@@ -18,10 +18,10 @@
       },
       "devDependencies": {
         "@astrojs/check": "0.9.5",
-        "@iconify/json": "2.2.400",
+        "@iconify/json": "2.2.403",
         "@tailwindcss/typography": "0.5.19",
         "@types/marked": "6.0.0",
-        "@types/node": "22.18.12",
+        "@types/node": "22.19.0",
         "@types/sanitize-html": "2.16.0",
         "@vite-pwa/assets-generator": "1.0.2",
         "concurrently": "9.2.1",
@@ -139,7 +139,7 @@
 
     "@fontsource-variable/inter": ["@fontsource-variable/inter@5.2.8", "", {}, "sha512-kOfP2D+ykbcX/P3IFnokOhVRNoTozo5/JxhAIVYLpea/UBmCQ/YWPBfWIDuBImXX/15KH+eKh4xpEUyS2sQQGQ=="],
 
-    "@iconify/json": ["@iconify/json@2.2.400", "", { "dependencies": { "@iconify/types": "*", "pathe": "^2.0.3" } }, "sha512-L8cy1YE/H0LFO4Pu7hfyylkrQmawL8sTOCH2PcBDydWA1FpoKijeIzweRJ6e9grvn2li9Yu+Pe32Jq9x4MKpaw=="],
+    "@iconify/json": ["@iconify/json@2.2.403", "", { "dependencies": { "@iconify/types": "*", "pathe": "^2.0.3" } }, "sha512-TU27b9pVsbYuTKF7i/OHAB5rUscWhe85AEk0vPkDT1MMqV7ZWWxUk5B7j03JHacX5NCtggB1KiCz985wjc7HVQ=="],
 
     "@iconify/types": ["@iconify/types@2.0.0", "", {}, "sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg=="],
 
@@ -321,7 +321,7 @@
 
     "@types/nlcst": ["@types/nlcst@2.0.3", "", { "dependencies": { "@types/unist": "*" } }, "sha512-vSYNSDe6Ix3q+6Z7ri9lyWqgGhJTmzRjZRqyq15N0Z/1/UnVsno9G/N40NBijoYx2seFDIl0+B2mgAb9mezUCA=="],
 
-    "@types/node": ["@types/node@22.18.12", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-BICHQ67iqxQGFSzfCFTT7MRQ5XcBjG5aeKh5Ok38UBbPe5fxTyE+aHFxwVrGyr8GNlqFMLKD1D3P2K/1ks8tog=="],
+    "@types/node": ["@types/node@22.19.0", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xpr/lmLPQEj+TUnHmR+Ab91/glhJvsqcjB+yY0Ix9GO70H6Lb4FHH5GeqdOE5btAx7eIMwuHkp4H2MSkLcqWbA=="],
 
     "@types/sanitize-html": ["@types/sanitize-html@2.16.0", "", { "dependencies": { "htmlparser2": "^8.0.0" } }, "sha512-l6rX1MUXje5ztPT0cAFtUayXF06DqPhRyfVXareEN5gGCFaP/iwsxIyKODr9XDhfxPpN6vXUFNfo5kZMXCxBtw=="],
 

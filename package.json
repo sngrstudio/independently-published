@@ -16,19 +16,19 @@
     "@astrojs/rss": "4.0.13",
     "@astrojs/sitemap": "3.6.0",
     "@fontsource-variable/inter": "5.2.8",
-    "@tailwindcss/vite": "4.1.16",
+    "@tailwindcss/vite": "4.1.17",
     "astro": "5.12.0",
     "marked": "15.0.12",
     "reading-time": "1.5.0",
     "sanitize-html": "2.17.0",
     "satori": "0.18.3",
     "satori-html": "0.3.2",
-    "sharp": "0.34.4",
-    "tailwindcss": "4.1.16"
+    "sharp": "0.34.5",
+    "tailwindcss": "4.1.17"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.5",
-    "@iconify/json": "2.2.403",
+    "@iconify/json": "2.2.405",
     "@tailwindcss/typography": "0.5.19",
     "@types/marked": "6.0.0",
     "@types/node": "22.19.0",

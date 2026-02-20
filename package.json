@@ -18,7 +18,7 @@
     "@fontsource-variable/inter": "5.2.8",
     "@tailwindcss/vite": "4.1.17",
     "astro": "5.12.0",
-    "marked": "15.0.12",
+    "marked": "17.0.3",
     "reading-time": "1.5.0",
     "sanitize-html": "2.17.0",
     "satori": "0.18.3",

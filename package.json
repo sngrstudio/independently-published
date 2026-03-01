@@ -31,7 +31,7 @@
     "@iconify/json": "2.2.410",
     "@tailwindcss/typography": "0.5.19",
     "@types/marked": "6.0.0",
-    "@types/node": "22.19.1",
+    "@types/node": "25.3.1",
     "@types/sanitize-html": "2.16.0",
     "@vite-pwa/assets-generator": "1.0.2",
     "concurrently": "9.2.1",
